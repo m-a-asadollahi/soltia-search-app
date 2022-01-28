@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/soltia-search-app/static/css/main.cd2213fc.css",
-    "main.js": "/soltia-search-app/static/js/main.e6d0ff80.js",
+    "main.css": "/soltia-search-app/static/css/main.e8dcc90d.css",
+    "main.js": "/soltia-search-app/static/js/main.a3994f1b.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/soltia-search-app/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/soltia-search-app/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/soltia-search-app/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -9,11 +9,11 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/soltia-search-app/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/soltia-search-app/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/soltia-search-app/index.html",
-    "main.cd2213fc.css.map": "/soltia-search-app/static/css/main.cd2213fc.css.map",
-    "main.e6d0ff80.js.map": "/soltia-search-app/static/js/main.e6d0ff80.js.map"
+    "main.e8dcc90d.css.map": "/soltia-search-app/static/css/main.e8dcc90d.css.map",
+    "main.a3994f1b.js.map": "/soltia-search-app/static/js/main.a3994f1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2213fc.css",
-    "static/js/main.e6d0ff80.js"
+    "static/css/main.e8dcc90d.css",
+    "static/js/main.a3994f1b.js"
   ]
 }
