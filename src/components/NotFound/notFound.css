@@ -1,0 +1,58 @@
+.root {
+  --shadow: #855a04;
+}
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.main-text {
+  margin: 0px;
+  color: #fec859;
+  font-size: 10rem;
+  text-shadow: 0 1px 0 #855a04, 0 2px 0 #855a04, 0 3px 0 #855a04,
+    0 4px 0 #855a04, 0 5px 0 #855a04, 0 6px 0 #855a04, 0 7px 0 #855a04,
+    0 8px 0 #855a04, 0 9px 0 #855a04, 0 50px 30px rgba(0, 0, 0, 0.3);
+  animation: wobble-hor-top 0.8s infinite both;
+  margin-bottom: 15px;
+}
+
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+.sub-text {
+  margin: 0px;
+  color: #495464;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-link {
+  margin: 0px;
+  color: #690fad;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}

@@ -1,0 +1,131 @@
+.searchHistory {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.74);
+  width: 40%;
+  margin-top: 10px;
+  box-shadow: 0px 1px 10px #495464;
+}
+
+.searchHistory-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 1.1rem;
+}
+
+.searchHistory-header > h5 {
+  /* color: #7b297d; */
+  margin: 0px;
+  color: #690fad;
+  font-weight: bold;
+}
+
+.searchHistory-header-tools {
+  color: #690fad;
+}
+
+.delete-all-history {
+  font-size: 1.3rem;
+}
+
+.delete-all-history:hover {
+  animation: delete-all-anim 0.7s both;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+@keyframes delete-all-anim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    color: rgb(146, 3, 39);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.searchHistory-list {
+  padding: 0px 0.5rem;
+}
+
+.searchHistory-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  background-color: #a988af52;
+  border-radius: 10px;
+  margin: 2px 0px;
+  cursor: pointer;
+}
+
+.searchHistory-list-item:hover {
+  animation: history-item 0.7s both;
+}
+
+@keyframes history-item {
+  0% {
+    transform: scale3d(1, 1);
+  }
+  100% {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgb(43, 42, 42);
+    transform: scale(1.01, 1.01);
+  }
+}
+
+.searchHistory-item-word {
+  color: #032e42;
+  font-size: 0.9rem;
+  /* font-weight: bold; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 60%;
+  white-space: nowrap;
+}
+
+.searchHistory-item-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchHistory-item-date {
+  color: rgb(77, 77, 78);
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+
+.searchHistory-item-icon-container {
+  font-size: 1rem;
+  color: rgb(146, 3, 39);
+  width: 2rem;
+  height: 1.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchHistory-item-icon-container:hover {
+  animation: wobble-ver-right 0.7s both;
+}

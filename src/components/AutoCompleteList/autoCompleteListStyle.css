@@ -1,0 +1,96 @@
+.autoCompleteList {
+  padding: 0px 0.1rem;
+}
+
+.autoList-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.7rem;
+}
+
+.autoList-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.autoList-item-active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.7rem;
+  background-color: #fff;
+  box-shadow: 0px 8px 8px -8px rgb(43, 42, 42);
+  transform: scale(1.01, 1.04);
+  background-color: #d9d5da4d;
+}
+
+.autoList-item:hover {
+  background-color: #fff;
+  box-shadow: 0px 8px 8px -8px rgb(43, 42, 42);
+  transform: scale(1.01, 1.04);
+  background-color: #ffd6084d;
+  cursor: pointer;
+}
+
+@keyframes autoList-item {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    background-color: #fff;
+    box-shadow: 0px 5px 8px -5px rgb(43, 42, 42);
+    transform: scale(1.01, 1.02);
+  }
+}
+
+.autoList-word {
+  color: var(--Grey100);
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+  display: block;
+}
+
+.autoList-icon-container {
+  color: #e9c304;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autoList-delete {
+  display: none;
+}
+
+.autoList-delete:hover {
+  display: block;
+  cursor: pointer;
+  animation: autoList-delete 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes autoList-delete {
+  0% {
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    transform: rotateZ(360deg) scale(1.2);
+  }
+}
+
+.autoList-item:hover > .autoList-delete {
+  color: #ff0766;
+  display: block;
+}
+
+.suggestion-text {
+  color: orange;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
